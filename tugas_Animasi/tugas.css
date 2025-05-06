@@ -1,0 +1,316 @@
+/* Basic Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #dc3545;
+}
+
+/* Parallax */
+.parallax {
+    background-image: url('https://via.placeholder.com/1920x1080'); /* Update with your image */
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-caption h5 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+/* Menu Section */
+#menu {
+    margin-top: 100px;
+}
+
+#menu h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#menu-items .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#menu-items .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.btn-outline-primary {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #c82333;
+}
+
+/* Filter Menu */
+#filter-flavor {
+    max-width: 300px;
+    font-size: 1rem;
+    margin: 0 auto;
+}
+
+/* Cart Section */
+#cart {
+    margin-top: 50px;
+}
+
+#cart h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#cart-items {
+    text-align: center;
+}
+
+#cart-items p {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer i {
+    margin-right: 10px;
+}
+
+/* Animations */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Hover effects */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #f39c12;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+/* Animated text for carousel */
+.carousel-caption h5 {
+    animation: slideInFromLeft 1s ease-out;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Order Form Styles (Hapus bagian Pesan Sekarang) */
+#order-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#order-form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#order-form input,
+#order-form select,
+#order-form button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#order-form button {
+    background-color: #dc3545;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#order-form button:hover {
+    background-color: #c82333;
+}
+
+/* Floating Cart */
+.cart-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.cart-icon:hover {
+    background-color: #c82333;
+}
+
+/* Modal for Checkout */
+.modal-content {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.modal-header {
+    border-bottom: none;
+    text-align: center;
+}
+
+.modal-footer {
+    border-top: none;
+    justify-content: center;
+}
+
+.modal-footer button {
+    background-color: #dc3545;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal-footer button:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+
+    #menu h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .btn-outline-primary {
+        font-size: 14px;
+    }
+
+    #filter-flavor {
+        max-width: 250px;
+    }
+
+    .cart-icon {
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    .modal-footer button {
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+}

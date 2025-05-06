@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Es Krim Lezat - Nikmati Sensasi Es Krim Terbaik!</title>
+    <link rel="stylesheet" href="tugas.css"> <!-- Link ke CSS yang dipisah -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Es Krim Lezat</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home"><i class="fas fa-home"></i> Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu"><i class="fas fa-cone"></i> Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials"><i class="fas fa-comments"></i> Testimoni</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cart"><i class="fas fa-shopping-cart"></i> Keranjang</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Parallax Section -->
+    <div class="parallax" id="home" style="background-image: url('img/eskrim-home.jpg'); background-attachment: fixed; background-size: cover; height: 100vh;">
+        <div class="carousel-caption d-none d-md-block fade-in">
+            <h5 class="display-4 text-shadow">Es Krim Klasik</h5>
+            <p class="lead text-shadow">Rasakan sensasi es krim klasik yang lembut dan menggugah selera.</p>
+            <a href="#menu" class="btn btn-danger btn-lg">Lihat Menu</a>
+        </div>
+    </div>
+
+    <!-- Menu Produk dengan Ikon -->
+    <div class="container mt-5" id="menu">
+        <h2 class="text-center mb-4">Menu Es Krim Kami</h2>
+
+        <!-- Filter Menu -->
+        <div class="d-flex justify-content-center mb-4">
+            <select class="form-select w-50" id="filter-flavor" aria-label="Filter rasa">
+                <option selected>Pilih Rasa</option>
+                <option value="vani">Es Krim Vani</option>
+                <option value="cokelat">Es Krim Cokelat</option>
+                <option value="strawberry">Es Krim Strawberry</option>
+                <option value="mangga">Es Krim Mangga</option>
+                <option value="matcha">Es Krim Matcha</option>
+                <option value="karamel">Es Krim Karamel</option>
+            </select>
+        </div>
+
+        <!-- Ikon Menu -->
+        <div class="row" id="menu-items">
+            <!-- Produk akan ditampilkan di sini oleh JavaScript -->
+        </div>
+    </div>
+
+    <!-- Testimoni Section -->
+    <div class="container mt-5" id="testimonials">
+        <h2 class="text-center mb-4">Apa Kata Pelanggan?</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body text-center">
+                        <p>"Es Krim Lezat adalah yang terbaik! Rasanya enak dan segar."</p>
+                        <footer class="blockquote-footer">Siti, Jakarta</footer>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body text-center">
+                        <p>"Setiap rasa memiliki keunikan dan kenikmatan yang tiada duanya."</p>
+                        <footer class="blockquote-footer">Andi, Bandung</footer>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body text-center">
+                        <p>"Sangat puas dengan pelayanan dan es krim yang ditawarkan."</p>
+                        <footer class="blockquote-footer">Diana, Surabaya</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Keranjang Belanja -->
+    <div class="container mt-5" id="cart">
+        <h2 class="text-center mb-4">Keranjang Belanja</h2>
+        <div id="cart-items">
+            <p>Keranjang Anda kosong.</p>
+        </div>
+        <div class="d-flex justify-content-center mt-3">
+            <a href="#" class="btn btn-success">Lanjutkan ke Pembayaran</a>
+            <button id="clear-cart" class="btn btn-danger ms-3">Kosongkan Keranjang</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 mt-5 bg-dark text-white">
+        <p>&copy; 2025 Es Krim Lezat. Hak Cipta Dilindungi.</p>
+        <p><i class="fas fa-map-marker-alt"></i> Alamat: Jl. Es Krim No. 123, Jakarta</p>
+        <p><i class="fas fa-phone"></i> Hubungi kami: 0812-3456-7890</p>
+        <p><i class="fas fa-envelope"></i> Email: info@eskrimlezat.com</p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="tugas.js"></script> <!-- Link ke file JavaScript -->
+</body>
+
+</html>
